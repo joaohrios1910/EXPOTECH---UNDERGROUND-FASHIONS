@@ -1,0 +1,125 @@
+o que tem que baixar pra rodar os códigos 
+para rodar é no terminal npm run dev
+
+pega esse e joga na internet (http://localhost:3000)
+
+##############################################
+
+coisas que precisa instalar pro frontend
+
+npm list tailwindcss
+
+npm install -D tailwindcss postcss autoprefixer
+
+##################################################
+
+
+npm install
+
+########################################################
+!obeservação cuidado!
+
+se vc criou o projeto com mesmo nome e tiver dando erro, 
+
+roda primeiro: cd "backend UndergroundFashions" e depois npm run dev
+
+# para rodar no terminal: npm run dev #
+
+
+
+npm install e npm run dev
+
+npm install express
+>> npm install -D @types/express
+
+npm install axios
+
+########################################################
+!obeservação cuidado!
+
+e veja se aparece algum erro vermelho.
+
+Uma observação importante
+
+No seu print eu vejo que o navegador ainda está usando:
+
+127.0.0.1:5000
+
+na barra inferior do VS Code (Go Live).
+
+Se você abrir pelo Live Server ou Flask, não estará usando o backend Node.
+
+Use somente: http://localhost:3000 Se você me mandar agora um print da página aberta em localhost:3000 (não 5000), 
+eu consigo confirmar 100% se o chatbot já está no backend ou se falta só ligar o index.html ao Express.
+
+
+
+
+o que vai ter q baixar pro banco de dados 
+
+
+npm install prisma@5 @prisma/client@5
+npm install pg
+npm install -D prisma
+npx prisma init
+npx prisma studio
+npx prisma migrate dev --name adicionando_clientes_vendas
+npx prisma generate
+npx prisma migrate dev --name add_categoria
+Assim no futuro você consegue listar:
+/api/produtos?categoria=Camisetas
+e organizar a loja Underground Fashions de forma profissional.
+
+npm install swagger-ui-express swagger-jsdoc
+npm install -D @types/swagger-ui-express
+npm install swagger-ui-express swagger-jsdoc
+
+
+uma coisa interessante o npx prisma studio Deve abrir uma página mostrando a tabela Produto.
+Se abrir: Prisma funcionando
+
+
+Instale a extensão Thunder Client.
+Clique no ícone do Thunder Client.
+Clique em New Request.
+Método:
+POST
+URL: http://localhost:3000/api/produtos
+
+
+aqui nos produtos tem que colocar o id e etc no final do produtos http E O SEVIDOR TEM QUE TA RODANDO PRA ADICIONAR OU DELETAR E ETC..
+
+PUT: http://localhost:3000/api/produtos/3
+POST: http://localhost:3000/api/produtos/3
+DELETE: http://localhost:3000/api/produtos/3
+GET: http://localhost:3000/api/produtos/3
+
+se nao instalou sql instala faça o mais simples pelo env
+
+como ta a estrutura do códigos
+
+src
+├── controllers
+├── services
+├── routes
+├── database
+├── models
+├── repositories
+└── server.ts
+
+######### rode isso ( npx prisma studio )########### para ver os produtos listado 
+
+
+
+
+cd "backend UndergroundFashions" (se tiver com mesmo arquivo)
+
+npm run dev
+
+ http://localhost:3000
+ 
+ coloca no site 
+tbm coloquei http://localhost:3000/api-docs
+
+ vai ter que gerar novo terminal pra rodar
+npx prisma studio

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underground Fashions</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- BOTÃO FLUTUANTE -->
+    <div class="chat-toggle" onclick="abrirChat()">
+        <img src="/logo.png" alt="Underground">
+    </div>
+
+    <!-- CHAT -->
+    <div class="chat-popup" id="chatPopup">
+
+        <!-- CABEÇALHO -->
+        <div class="chat-header">
+
+            <div class="header-info">
+                <strong>UNDERGROUND</strong>
+                <small>FASHIONS 🟢 Online</small>
+            </div>
+
+            <button onclick="fecharChat()">✕</button>
+
+        </div>
+
+        <!-- MENSAGENS -->
+        <div class="chat-box" id="chat-box">
+
+            <div class="bot-message">
+                👋 Bem-vindo(a) à Underground Fashions.
+                <br><br>
+                Escolha uma opção:
+            </div>
+
+            <div class="menu-grid">
+
+                <div class="menu-card" onclick="selecionarOpcao('produtos')">
+                    👕
+                    <span>Produtos</span>
+                </div>
+
+                <div class="menu-card" onclick="selecionarOpcao('pedido')">
+                    📦
+                    <span>Pedidos</span>
+                </div>
+
+                <div class="menu-card" onclick="selecionarOpcao('frete')">
+                    🚚
+                    <span>Frete</span>
+                </div>
+
+                <div class="menu-card" onclick="selecionarOpcao('cupom')">
+                    🎟️
+                    <span>Cupons</span>
+                </div>
+
+                <div class="menu-card" onclick="selecionarOpcao('Trocas')">
+                    🔄
+                    <span>Trocas</span>
+                </div>
+
+                <div class="menu-card" onclick="selecionarOpcao('Atendimento')">
+                    💬
+                    <span>Atendimento</span>
+                </div>
+
+                <div class="menu-card" onclick="selecionarOpcao('Lançamentos')">
+                    ⭐
+                    <span>Lançamentos</span>
+                </div>
+
+                <div class="menu-card" onclick="selecionarOpcao('Sobre a Marca')">
+                    🏢
+                    <span>Sobre a Marca</span>
+                </div>
+
+                <div class="menu-card" onclick="selecionarOpcao('Guia de Tamanhos')">
+                    📏
+                    <span>Guia de Tamanhos</span>
+                </div>
+
+                <div class="menu-card" onclick="selecionarOpcao('Pagamentos')">
+                    💳
+                    <span>Pagamentos</span>
+                </div>
+
+               
+
+            </div>
+
+        </div>
+
+        <!-- ÁREA DE DIGITAÇÃO -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="mensagem"
+                placeholder="Digite sua mensagem..."
+            >
+
+            <button
+                id="btnMic"
+                onclick="iniciarMicrofone()">
+                🎤
+            </button>
+
+            <button
+                id="btnEnviar"
+                onclick="enviarMensagem()">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
